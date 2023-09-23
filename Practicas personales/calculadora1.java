@@ -21,7 +21,7 @@ public class calculadora1 {
                 System.out.println("El resultado de la suma es " + (num1+num2));
 
                 break;
- 
+
             case 2: 
 
                 num1 = Double.parseDouble(JOptionPane.showInputDialog("Introduce el primer número")); 
