@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class practicaBucles2 {
+public class MiniJuegoNumeros {
 
     public static void main (String [] args ){
 
