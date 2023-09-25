@@ -5,12 +5,15 @@ public class calculadora1 {
 
     public static void main (String [] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        int eleccion;
 
-        System.out.println("Elige una opción: \n1: Suma \n2: Resta \n3: Multiplicación \n4: División \n5: Raíz Cuadrada \n6: Potencia");
+        do{
+        
+            eleccion = Integer.parseInt(JOptionPane.showInputDialog("Elige una opción: 1: Suma | 2: Resta | 3: Multiplicación | 4: División | 5: Raíz Cuadrada | 6: Potencia | 7: Factorial"));
 
-        int eleccion = entrada.nextInt();
+        }while (eleccion>7 || eleccion<0);
 
+        
         switch (eleccion) {
 
             case 1: 
@@ -65,6 +68,26 @@ public class calculadora1 {
                 System.out.println("El resultado de la potencia es " + (Math.pow(base, exponente)));
 
                 break;
+
+            case 7:
+
+                double resultado = 1;
+                double numFact = Double.parseDouble(JOptionPane.showInputDialog("Introduce el numero")); 
+
+                for(double i=numFact; i>0; i--){
+
+                    resultado = resultado*i;
+
+                }
+
+                Double resultadoFact = resultado;
+
+                System.out.print("El factorial de " + numFact + " es ");
+                System.out.printf("%1.2f", resultadoFact);
+
+
+                break;
+
 
             default:
                 System.out.println("La opción no es correcta.");
