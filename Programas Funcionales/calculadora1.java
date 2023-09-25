@@ -9,9 +9,6 @@ public class calculadora1 {
         do{
         
             eleccion = Integer.parseInt(JOptionPane.showInputDialog("Elige una opción: 1: Suma | 2: Resta | 3: Multiplicación | 4: División | 5: Raíz Cuadrada | 6: Potencia | 7: Factorial"));
-=======
-        System.out.println("Elige una opción: \n1: Suma \n2: Resta \n3: Multiplicación \n4: División \n5: Raíz Cuadrada \n6: Potencia \n7: Factorial");
->>>>>>> 8a1d67a800c9f92dec96a68b43b36f71b8594fbd
 
         }while (eleccion>7 || eleccion<0);
 
