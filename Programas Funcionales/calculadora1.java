@@ -7,7 +7,7 @@ public class calculadora1 {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Elige una opción: \n1: Suma \n2: Resta \n3: Multiplicación \n4: División \n5: Raíz Cuadrada \n6: Potencia");
+        System.out.println("Elige una opción: \n1: Suma \n2: Resta \n3: Multiplicación \n4: División \n5: Raíz Cuadrada \n6: Potencia \n7: Factorial");
 
         int eleccion = entrada.nextInt();
 
@@ -65,6 +65,18 @@ public class calculadora1 {
                 System.out.println("El resultado de la potencia es " + (Math.pow(base, exponente)));
 
                 break;
+
+            case 7:
+
+                Long resultadoFact = 1L;
+                int numFact = Integer.parseInt(JOptionPane.showInputDialog("Introduce el número a realizar el factorial"));
+                for (int i=numFact; i>0; i--){
+
+                    resultadoFact = resultadoFact * i;
+
+                }
+
+                System.out.println("El factorial de " + numFact + " es " + resultadoFact);
 
             default:
                 System.out.println("La opción no es correcta.");
