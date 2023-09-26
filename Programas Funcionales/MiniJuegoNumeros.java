@@ -36,6 +36,8 @@ public class MiniJuegoNumeros {
 
         System.out.println("Correcto!, has acertado en " + intentos + " intentos!");
 
+        entrada.close();
+
     }
     
 }
