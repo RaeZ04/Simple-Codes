@@ -34,6 +34,7 @@ public class practicaCondicionales1 {
 
         }
         
+        entrada.close();
 
     }
 

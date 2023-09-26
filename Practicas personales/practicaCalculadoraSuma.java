@@ -35,6 +35,8 @@ public class practicaCalculadoraSuma {
         //  String terciaria = (resultado == 7) ? "numero maldito" : "El resultado es: " + resultado;
         //  System.out.println(terciaria);
         
+        entrada.close();
+
     }
 
 }

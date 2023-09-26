@@ -36,6 +36,8 @@ public class practicaBucles2 {
 
         System.out.println("Correcto!, has acertado en " + intentos + " intentos!");
 
+        entrada.close();
+
     }
     
 }
