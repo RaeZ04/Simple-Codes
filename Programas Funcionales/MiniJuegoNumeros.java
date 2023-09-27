@@ -2,9 +2,9 @@ import java.util.*;
 
 public class MiniJuegoNumeros {
 
-    public static void main (String [] args ){
+    public static void main(String[] args) {
 
-        int random = (int) (Math.random()*100);
+        int random = (int) (Math.random() * 100);
 
         Scanner entrada = new Scanner(System.in);
 
@@ -12,7 +12,7 @@ public class MiniJuegoNumeros {
 
         int intentos = 0;
 
-        do{
+        do {
 
             intentos++;
 
@@ -20,24 +20,24 @@ public class MiniJuegoNumeros {
 
             num = entrada.nextInt();
 
-            if (random<num){
+            if (random < num) {
 
                 System.out.println("\nMás bajo \n");
 
             }
 
-            else if (random>num){
+            else if (random > num) {
 
                 System.out.println("\nMás alto \n");
 
             }
 
-        }while(num!=random);
+        } while (num != random);
 
         System.out.println("Correcto!, has acertado en " + intentos + " intentos!");
 
         entrada.close();
 
     }
-    
+
 }

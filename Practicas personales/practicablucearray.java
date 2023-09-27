@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class practicablucearray {
+public class practicaBluceArray {
 
 
     public static void main (String [] args){
