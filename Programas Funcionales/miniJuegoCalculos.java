@@ -1,9 +1,11 @@
+import java.util.Timer;
+import java.util.TimerTask;
+
 import javax.swing.JOptionPane;
 
 public class miniJuegoCalculos {
 
-    public static void main (String[] args) {
-
+    public static void main(String[] args) {
 
         int aciertosRestantes = 10;
 
@@ -14,6 +16,22 @@ public class miniJuegoCalculos {
         if (SiNo.equalsIgnoreCase("S")) {
 
             System.out.println("Empiezas con 100 de vida, buena suerte.");
+
+            Timer timer = new Timer();
+            timer.schedule(new TimerTask() {
+                int tiempoRestante = 60;
+
+                public void run() {
+                    if (tiempoRestante > 0) {
+                        System.out.println("Tiempo restante: " + tiempoRestante + " segundos");
+                        tiempoRestante--;
+                    } else {
+                        System.out.println("¡Se te ha acabado el tiempo!");
+                        timer.cancel(); // Detener el contador de tiempo
+                        System.exit(0); // Terminar el programa
+                    }
+                }
+            }, 0, 1000); // Ejecutar cada 1000ms (1 segundo)
 
             while (aciertosRestantes > 0) {
 
