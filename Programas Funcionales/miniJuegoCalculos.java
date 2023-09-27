@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 public class miniJuegoCalculos {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         int aciertosRestantes = 10;
 
