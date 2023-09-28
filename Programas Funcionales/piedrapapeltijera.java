@@ -8,7 +8,7 @@ public class piedrapapeltijera {
         System.out.println("Juego de Piedra, Papel o Tijera");
         System.out.println("--------------------------------");
 
-        String eleccion = JOptionPane.showInputDialog("Eljige: Piedra, Papel o Tijera");
+        String eleccion = JOptionPane.showInputDialog("Elige: Piedra, Papel o Tijera");
 
         Random random = new Random();
         int opciones = random.nextInt(3) + 1  ;
@@ -132,3 +132,6 @@ public class piedrapapeltijera {
     }
 
 }
+
+
+// Creditos a miguel angel como Co-Creador
