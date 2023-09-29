@@ -64,15 +64,27 @@ public class piedrapapeltijera {
 
         }
 
-        if(eleccion.equalsIgnoreCase("papel")){
+        else if(eleccion.equalsIgnoreCase("papel")){
 
             valorEleccion = 5;
 
         }
 
-        if(eleccion.equalsIgnoreCase("piedra")){
+        else if(eleccion.equalsIgnoreCase("piedra")){
 
             valorEleccion = 6;
+
+        }
+
+        else if (eleccion.trim().isEmpty()) {
+            
+            System.out.println("No puedes dejar el texto en blanco, elija entre 'Piedra', 'Papel' o 'Tijera'");
+
+        }
+
+        else{
+
+            System.out.println("La opcion indicada no existe, elija entre 'Piedra','Papel' o 'Tijera'");
 
         }
         
@@ -134,4 +146,3 @@ public class piedrapapeltijera {
 }
 
 
-// Creditos a miguel angel como Co-Creador
