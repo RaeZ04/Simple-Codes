@@ -2,8 +2,8 @@ import javax.swing.JOptionPane;
 import java.util.*;
 
 public class piedrapapeltijera {
-    
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
 
         System.out.println("Juego de Piedra, Papel o Tijera");
         System.out.println("--------------------------------");
@@ -11,24 +11,23 @@ public class piedrapapeltijera {
         String eleccion = JOptionPane.showInputDialog("Elige: Piedra, Papel o Tijera");
 
         Random random = new Random();
-        int opciones = random.nextInt(3) + 1  ;
+        int opciones = random.nextInt(3) + 1;
 
         String maquina = "nada";
-        
 
-        if (opciones == 1){
+        if (opciones == 1) {
 
             maquina = "Piedra";
 
         }
 
-        if (opciones == 2){
+        if (opciones == 2) {
 
             maquina = "Tijera";
 
         }
 
-        if (opciones == 3){
+        if (opciones == 3) {
 
             maquina = "Papel";
 
@@ -38,19 +37,19 @@ public class piedrapapeltijera {
         int valorPapel = 0;
         int valorPiedra = 0;
 
-        if(maquina.equalsIgnoreCase("tijera")){
+        if (maquina.equalsIgnoreCase("tijera")) {
 
             valorTijera = 1;
 
         }
 
-        if(maquina.equalsIgnoreCase("papel")){
+        if (maquina.equalsIgnoreCase("papel")) {
 
             valorPapel = 1;
 
         }
 
-        if(maquina.equalsIgnoreCase("piedra")){
+        if (maquina.equalsIgnoreCase("piedra")) {
 
             valorPiedra = 1;
 
@@ -58,91 +57,85 @@ public class piedrapapeltijera {
 
         int valorEleccion = 0;
 
-        if(eleccion.equalsIgnoreCase("tijera")){
+        if (eleccion.equalsIgnoreCase("tijera")) {
 
             valorEleccion = 4;
 
         }
 
-        else if(eleccion.equalsIgnoreCase("papel")){
+        else if (eleccion.equalsIgnoreCase("papel")) {
 
             valorEleccion = 5;
 
         }
 
-        else if(eleccion.equalsIgnoreCase("piedra")){
+        else if (eleccion.equalsIgnoreCase("piedra")) {
 
             valorEleccion = 6;
 
         }
 
         else if (eleccion.trim().isEmpty()) {
-            
+
             System.out.println("No puedes dejar el texto en blanco, elija entre 'Piedra', 'Papel' o 'Tijera'");
 
         }
 
-        else{
+        else {
 
             System.out.println("La opcion indicada no existe, elija entre 'Piedra','Papel' o 'Tijera'");
 
         }
-        
 
-        if(maquina.equalsIgnoreCase(eleccion)){
+        if (maquina.equalsIgnoreCase(eleccion)) {
 
             System.out.print("Elijo: " + maquina);
             System.out.println(" | Hemos empatado.");
 
         }
 
-        if(valorTijera == 1 && valorEleccion == 5){
-
-            System.out.print("Elijo: " + maquina);
-            System.out.println(" | Has perdido");
-
-        }
-        
-        if(valorTijera == 1 && valorEleccion == 6){
-
-            System.out.print("Elijo: " + maquina);
-            System.out.println(" | Has ganado");
-
-        }
-
-        if(valorPapel == 1 && valorEleccion == 6){
+        if (valorTijera == 1 && valorEleccion == 5) {
 
             System.out.print("Elijo: " + maquina);
             System.out.println(" | Has perdido");
 
         }
 
-        if(valorPapel == 1 && valorEleccion == 4){
+        if (valorTijera == 1 && valorEleccion == 6) {
 
             System.out.print("Elijo: " + maquina);
             System.out.println(" | Has ganado");
 
         }
 
-        if(valorPiedra == 1 && valorEleccion == 4){
+        if (valorPapel == 1 && valorEleccion == 6) {
 
             System.out.print("Elijo: " + maquina);
             System.out.println(" | Has perdido");
 
         }
 
-        if(valorPiedra == 1 && valorEleccion == 5){
+        if (valorPapel == 1 && valorEleccion == 4) {
 
             System.out.print("Elijo: " + maquina);
             System.out.println(" | Has ganado");
 
         }
 
+        if (valorPiedra == 1 && valorEleccion == 4) {
 
+            System.out.print("Elijo: " + maquina);
+            System.out.println(" | Has perdido");
 
+        }
+
+        if (valorPiedra == 1 && valorEleccion == 5) {
+
+            System.out.print("Elijo: " + maquina);
+            System.out.println(" | Has ganado");
+
+        }
 
     }
 
 }
-
-
