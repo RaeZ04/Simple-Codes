@@ -8,8 +8,6 @@ public class piedrapapeltijera {
         System.out.println("Juego de Piedra, Papel o Tijera");
         System.out.println("--------------------------------");
 
-        String eleccion = JOptionPane.showInputDialog("Elige: Piedra, Papel o Tijera");
-
         Random random = new Random();
         int opciones = random.nextInt(3) + 1;
 
@@ -55,35 +53,50 @@ public class piedrapapeltijera {
 
         }
 
+        boolean fallo = true;
         int valorEleccion = 0;
+        String eleccion = "";
 
-        if (eleccion.equalsIgnoreCase("tijera")) {
+        while (fallo == true) {
 
-            valorEleccion = 4;
+            eleccion = JOptionPane.showInputDialog("Elige: Piedra, Papel o Tijera");
 
-        }
+            
 
-        else if (eleccion.equalsIgnoreCase("papel")) {
+            if (eleccion.equalsIgnoreCase("tijera")) {
 
-            valorEleccion = 5;
+                valorEleccion = 4;
+                fallo = false;
 
-        }
+            }
 
-        else if (eleccion.equalsIgnoreCase("piedra")) {
+            else if (eleccion.equalsIgnoreCase("papel")) {
 
-            valorEleccion = 6;
+                valorEleccion = 5;
+                fallo = false;
 
-        }
+            }
 
-        else if (eleccion.trim().isEmpty()) {
+            else if (eleccion.equalsIgnoreCase("piedra")) {
 
-            System.out.println("No puedes dejar el texto en blanco, elija entre 'Piedra', 'Papel' o 'Tijera'");
+                valorEleccion = 6;
+                fallo = false;
 
-        }
+            }
 
-        else {
+            else if (eleccion.trim().isEmpty()) {
 
-            System.out.println("La opcion indicada no existe, elija entre 'Piedra','Papel' o 'Tijera'");
+                System.out.println("No puedes dejar el texto en blanco, elija entre 'Piedra', 'Papel' o 'Tijera'");
+                fallo = true;
+
+            }
+
+            else {
+
+                System.out.println("La opcion indicada no existe, elija entre 'Piedra','Papel' o 'Tijera'");
+                fallo = true;
+
+            }
 
         }
 
