@@ -8,10 +8,30 @@ public class calculadora1 {
 
         do {
 
-            eleccion = Integer.parseInt(JOptionPane.showInputDialog(
-                    "Elige una opción: 1: Suma | 2: Resta | 3: Multiplicación | 4: División | 5: Raíz Cuadrada | 6: Potencia | 7: Factorial"));
+            String input = JOptionPane.showInputDialog("Elige una opción: 1: Suma | 2: Resta | 3: Multiplicación | 4: División | 5: Raíz Cuadrada | 6: Potencia | 7: Factorial");
 
-        } while (eleccion > 7 || eleccion <= 0);
+            if (input.trim().isEmpty()){
+
+                eleccion = 0;
+
+            } else{
+ 
+                eleccion = Integer.parseInt(input);
+
+            }
+
+            if (eleccion != 1 && eleccion != 2 && eleccion != 3 && eleccion != 4 & eleccion != 5 && eleccion != 6 && eleccion != 7){
+
+                JOptionPane.showMessageDialog(null, "Debes ingresar una opción válida.");
+                eleccion = 0;
+
+            }else{
+
+                eleccion = Integer.parseInt(input);
+
+            }
+
+        } while (eleccion <= 0);
 
         switch (eleccion) {
 
@@ -85,9 +105,6 @@ public class calculadora1 {
                 System.out.printf("%1.2f", resultadoFact);
 
                 break;
-
-            default:
-                System.out.println("La opción no es correcta.");
 
         }
 
