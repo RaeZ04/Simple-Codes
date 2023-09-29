@@ -1,4 +1,4 @@
-package poo2;
+package POO.poo2;
 
 import java.util.*;
 

@@ -14,7 +14,7 @@ public class registro1 {
 
         else {
 
-            while (clave.equals("") == true) {
+            while (clave.equals("")) {
 
                 clave = JOptionPane.showInputDialog("La contraseña no puede estar en blanco, intentelo de nuevo");
 

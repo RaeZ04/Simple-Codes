@@ -1,4 +1,5 @@
-package poo1;
+package POO.poo1;
+
 
 public class coche {
 

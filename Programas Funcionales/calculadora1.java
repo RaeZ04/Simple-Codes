@@ -67,7 +67,15 @@ public class calculadora1 {
                 num1 = Double.parseDouble(JOptionPane.showInputDialog("Introduce el primer número"));
                 num2 = Double.parseDouble(JOptionPane.showInputDialog("Introduce el segundo número"));
 
+                if (num2 == 0){
+
+                    JOptionPane.showMessageDialog(null, "No se puede divir entre 0, ingresa otro número.");
+                    break;
+                    
+                }
+
                 System.out.println("El resultado de la división es " + (num1 / num2));
+
 
                 break;
 
