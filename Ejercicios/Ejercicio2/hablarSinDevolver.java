@@ -1,3 +1,6 @@
+package Ejercicios.Ejercicio2;
+
+
 public class hablarSinDevolver {
     
     String nombre;

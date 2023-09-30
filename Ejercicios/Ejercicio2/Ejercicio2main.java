@@ -1,3 +1,4 @@
+package Ejercicios.Ejercicio2;
 public class Ejercicio2main {
     
     public static void main(String[] args){
