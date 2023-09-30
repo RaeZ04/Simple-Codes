@@ -10,7 +10,7 @@ public class generadorPass {
 
         int z = 0;
 
-        System.out.println("Las contraseñas son: ");
+
         int complejidad;
         int longitud2;
 
@@ -48,6 +48,8 @@ public class generadorPass {
             }
 
         } while (complejidad == 1 && complejidad == 2 && complejidad == 3);
+
+        System.out.println("Las contraseñas son: ");
 
         do {
 
