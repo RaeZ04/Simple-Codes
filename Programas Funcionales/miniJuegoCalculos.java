@@ -19,19 +19,25 @@ public class miniJuegoCalculos {
 
             Timer timer = new Timer();
             timer.schedule(new TimerTask() {
+
                 int tiempoRestante = 60;
 
                 public void run() {
                     if (tiempoRestante > 0) {
+
                         System.out.println("Tiempo restante: " + tiempoRestante + " segundos");
                         tiempoRestante--;
+
                     } else {
-                        System.out.println("¡Se te ha acabado el tiempo!");
+
+                        JOptionPane.showMessageDialog(null, "¡Se te ha acabado el tiempo!");
                         timer.cancel(); // Detener el contador de tiempo
                         System.exit(0); // Terminar el programa
+
                     }
                 }
             }, 0, 1000); // Ejecutar cada 1000ms (1 segundo)
+
 
             while (aciertosRestantes > 0) {
 
@@ -49,13 +55,15 @@ public class miniJuegoCalculos {
 
                     if (aciertosRestantes != 0) {
 
-                        System.out.println("Has acertado, te quedan " + aciertosRestantes + " intentos.");
+                        JOptionPane.showMessageDialog(null, "Has acertado, te quedan " + aciertosRestantes + " aciertos.");
 
                     }
 
                     else if (aciertosRestantes == 0) {
 
-                        System.out.println("¡ENHORABUENA, has ganado!!!");
+                        
+                        System.out.println("¡ENHORABUENA, has ganado!!!"); 
+                        System.exit(0);
 
                     }
 
@@ -67,7 +75,7 @@ public class miniJuegoCalculos {
 
                     if (vida > 0) {
 
-                        System.out.println("Has fallado, te queda " + vida + " de vida.");
+                        JOptionPane.showMessageDialog(null, "Has fallado, te queda " + vida + " de vida.");
 
                     }
 
@@ -75,8 +83,9 @@ public class miniJuegoCalculos {
 
                 if (vida <= 0) {
 
-                    System.out.println("Tu vida ha llegado a 0, has perdido.");
-                    break;
+                    JOptionPane.showMessageDialog(null, "Tu vida ha llegado a 0, has perdido.");
+                    JOptionPane.showMessageDialog(null, "Te han quedado " + aciertosRestantes + " aciertos para ganar");
+                    System.exit(0);
 
                 }
 
@@ -86,13 +95,13 @@ public class miniJuegoCalculos {
 
         else if (SiNo.equalsIgnoreCase("n")) {
 
-            System.out.println("Has decidio no jugar :(");
+            JOptionPane.showMessageDialog(null, "Has decidio no jugar :(");
 
         }
 
         else {
 
-            System.out.println("La opción que has elegido no es valida, tienes que ingresar una 'S' o una 'N'.");
+            JOptionPane.showMessageDialog(null, "La opción que has elegido no es valida, tienes que ingresar una 'S' o una 'N'.");
 
         }
 
