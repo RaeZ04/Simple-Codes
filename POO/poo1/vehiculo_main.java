@@ -1,8 +1,5 @@
 package POO.poo1;
 
-
-import javax.swing.*;
-
 public class vehiculo_main {
 
     public static void main(String[] args) {
