@@ -23,7 +23,7 @@ public class coche {
 
     public String datos_default() { // GETTER
 
-        return "La plataforma del coche tiene " + ruedas + " ruedas." + " Mide " + largo / 1000
+        return "La plataforma del vehiculo tiene " + ruedas + " ruedas." + " Mide " + largo / 1000
                 + " metros con un ancho de " + ancho + " cm y un peso de plataforma de " + peso_plataforma + " kg.";
 
     }
