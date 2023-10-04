@@ -5,54 +5,165 @@ import javax.swing.JOptionPane;
 
 public class blackjack_main {
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
 
-        System.out.println("-------------------------");
-        System.out.println(" Bienvenido al blackjack");
-        System.out.println("-------------------------");
-
-        Scanner input = new Scanner(System.in);
+        String[] cartas = { "As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Q", "J", "K" };
 
         Random random = new Random();
 
-        int cartaplayer1 = random.nextInt(10) + 1;
-        int cartaplayer2 = random.nextInt(10) + 1;
-        int cartaplayer3 = 0;
-        int cartaplayer4 = 0;
-        int cartaplayer5 = 0;
-        int cartaplayer6 = 0;
+        int valorCartaPlayer = 0;
+        int valorCartaIA = 0;
 
-        int cartaIA1 = random.nextInt(10) + 1;
-        int cartaIA2 = random.nextInt(10) + 1;
-        int cartaIA3 = 0;
-        int cartaIA4 = 0;
-        int cartaIA5 = 0;
-        int cartaIA6 = 0;
+        while (valorCartaIA <= 21 && valorCartaPlayer <= 21) {
 
-        int blackjacktotal = 21;
-        int blackjackplayer = 0;
-        int blackjackIA = 0;
+            int CartaRandomInt1 = random.nextInt(cartas.length);
+            int CartaRandomInt2 = random.nextInt(cartas.length);
+            String CartaRandom1 = cartas[CartaRandomInt1];
+            String CartaRandom2 = cartas[CartaRandomInt2];
 
-        int sumacartasplayer = cartaplayer1 + cartaplayer2 + cartaplayer3 + cartaplayer4 + cartaplayer5 + cartaplayer6;
-        int sumacartasIA = cartaIA1 + cartaIA2 + cartaIA3 + cartaIA4 + cartaIA5 + cartaIA6;
+            if (CartaRandom1 == cartas[0] || CartaRandom2 == cartas [0]) {
 
-        System.out.println("Empiezas con " + cartaplayer1 + " y " + cartaplayer2);
-        System.out.println("La IA ha empezado con " + cartaIA1 + " y " + cartaIA2);
+                valorCartaPlayer = valorCartaPlayer + 1;
 
-        while (blackjackplayer <= 21 && blackjackIA <= 21){
+            } 
+            
+            if (CartaRandom1 == cartas[1] || CartaRandom2 == cartas [1]) {
 
-            System.out.println("1. Pedir  |  2. Plantar");
+                valorCartaPlayer = valorCartaPlayer + 2;
 
-            while (input != 1 || input != 2){
+            } 
+            
+            if (CartaRandom1 == cartas[2] || CartaRandom2 == cartas [2]) {
 
-                System.out.println("Tienes que ingresar 1 para pedir o 2 para plantarte");
+                valorCartaPlayer = valorCartaPlayer + 3;
+
+            } 
+            
+            if (CartaRandom1 == cartas[3] || CartaRandom2 == cartas [3]) {
+
+                valorCartaPlayer = valorCartaPlayer + 4;
+
+            } 
+            
+            if (CartaRandom1 == cartas[4] || CartaRandom2 == cartas [4]) {
+
+                valorCartaPlayer = valorCartaPlayer + 5;
+
+            } 
+            
+            if (CartaRandom1 == cartas[5] || CartaRandom2 == cartas [5]) {
+
+                valorCartaPlayer = valorCartaPlayer + 6;
+
+            } 
+            
+            if (CartaRandom1 == cartas[6] || CartaRandom2 == cartas [6]) {
+
+                valorCartaPlayer = valorCartaPlayer + 7;
+
+            } 
+            
+            if (CartaRandom1 == cartas[7] || CartaRandom2 == cartas [7]) {
+
+                valorCartaPlayer = valorCartaPlayer + 8;
+
+            } 
+            
+            if (CartaRandom1 == cartas[8] || CartaRandom2 == cartas [8]) {
+
+                valorCartaPlayer = valorCartaPlayer + 9;
+
+            } 
+            
+            if (CartaRandom1 == cartas[9] || CartaRandom2 == cartas [9]) {
+
+                valorCartaPlayer = valorCartaPlayer + 10;
+
+            } 
+            
+            if (CartaRandom1 == cartas[10] || CartaRandom2 == cartas [10]) {
+
+                valorCartaPlayer = valorCartaPlayer + 10;
+
+            } 
+            
+            if (CartaRandom1 == cartas[11] || CartaRandom2 == cartas [11]) {
+
+                valorCartaPlayer = valorCartaPlayer + 10;
+
+            } 
+            
+            if (CartaRandom1 == cartas[12] || CartaRandom2 == cartas [12]) {
+
+                valorCartaPlayer = valorCartaPlayer + 10;
 
             }
 
+            if (CartaRandom1.equals("As") || CartaRandom2.equals("As")) {
+
+                valorCartaIA = valorCartaIA + 1;
+
+            } else if (CartaRandom1.equals("2") || CartaRandom2.equals("2")) {
+
+                valorCartaIA = valorCartaIA + 2;
+
+            } else if (CartaRandom1.equals("3") || CartaRandom2.equals("3")) {
+
+                valorCartaIA = valorCartaIA + 3;
+
+            } else if (CartaRandom1.equals("4") || CartaRandom2.equals("4")) {
+
+                valorCartaIA = valorCartaIA + 4;
+
+            } else if (CartaRandom1.equals("5") || CartaRandom2.equals("5")) {
+
+                valorCartaIA = valorCartaIA + 5;
+
+            } else if (CartaRandom1.equals("6") || CartaRandom2.equals("6")) {
+
+                valorCartaIA = valorCartaIA + 6;
+
+            } else if (CartaRandom1.equals("7") || CartaRandom2.equals("7")) {
+
+                valorCartaIA = valorCartaIA + 7;
+
+            } else if (CartaRandom1.equals("8") || CartaRandom2.equals("8")) {
+
+                valorCartaIA = valorCartaIA + 8;
+
+            } else if (CartaRandom1.equals("9") || CartaRandom2.equals("9")) {
+
+                valorCartaIA = valorCartaIA + 9;
+
+            } else if (CartaRandom1.equals("10") || CartaRandom2.equals("10")) {
+
+                valorCartaIA = valorCartaIA + 10;
+
+            } else if (CartaRandom1.equals("Q") || CartaRandom2.equals("Q")) {
+
+                valorCartaIA = valorCartaIA + 10;
+
+            } else if (CartaRandom1.equals("J") || CartaRandom2.equals("J")) {
+
+                valorCartaIA = valorCartaIA + 10;
+
+            } else if (CartaRandom1.equals("K") || CartaRandom2.equals("K")) {
+
+                valorCartaIA = valorCartaIA + 10;
+
+            }
+            
+
+            System.out.println("---------------------");
+            System.out.println("Bienvenido al Blackjack");
+            System.out.println("---------------------");
+
+            System.out.println("Tus cartas son: " + CartaRandom1 + " y " + CartaRandom2);
+            System.out.println("Valor Cartas: " + valorCartaPlayer);
+
+            break;
 
         }
 
-
     }
-    
 }
