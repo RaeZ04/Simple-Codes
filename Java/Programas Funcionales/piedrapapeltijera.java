@@ -61,6 +61,8 @@ public class piedrapapeltijera {
 
             eleccion = JOptionPane.showInputDialog("Elige: Piedra, Papel o Tijera");
 
+            
+
             if (eleccion.equalsIgnoreCase("tijera")) {
 
                 valorEleccion = 4;
@@ -150,3 +152,4 @@ public class piedrapapeltijera {
     }
 
 }
+

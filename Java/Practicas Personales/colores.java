@@ -1,4 +1,3 @@
-package Ejercicios;
 import javax.swing.JOptionPane;
 
 public class colores {

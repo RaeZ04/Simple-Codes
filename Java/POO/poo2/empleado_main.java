@@ -24,12 +24,11 @@ public class empleado_main {
         // empleado3.sueldo_get() + ", Fecha de alta: " +
         // empleado3.fechaContrato_get());
 
-        Empleado[] misEmpleados = new Empleado[4];
+        Empleado[] misEmpleados = new Empleado[3];
 
         misEmpleados[0] = new Empleado("Raul Guijon", 60000, 1990, 12, 17);
         misEmpleados[1] = new Empleado("Sofia Marques", 75000, 1996, 06, 04);
         misEmpleados[2] = new Empleado("Toni Gonzalez", 93000, 2001, 03, 15);
-        misEmpleados[3] = new Empleado("Jose Tocaz");
 
         for (Empleado e : misEmpleados) { // For Each
 
@@ -50,6 +49,8 @@ public class empleado_main {
 
         // }
 
+        
+
         // for (int i = 0; i < 3; i++) {
 
         // System.out.println("Nombre: " + misEmpleados[i].nombre_get() + ", Sueldo: " +
@@ -64,11 +65,7 @@ public class empleado_main {
 
 class Empleado {
 
-    private String nombre;
-    private double sueldo;
-    private Date altaContrato;
-
-    public Empleado(String nom, double sue, int agno, int mes, int dia) { // Constructor 1
+    public Empleado(String nom, double sue, int agno, int mes, int dia) {
 
         nombre = nom;
         sueldo = sue;
@@ -76,12 +73,6 @@ class Empleado {
         GregorianCalendar calendario = new GregorianCalendar(agno, mes - 1, dia);
 
         altaContrato = calendario.getTime();
-
-    }
-
-    public Empleado(String nom) { // Constructor 2, por si solo se conoce el nombre
-
-        this(nom, 30000, 0, 0, 0);
 
     }
 
@@ -110,5 +101,9 @@ class Empleado {
         sueldo += aumento;
 
     }
+
+    private String nombre;
+    private double sueldo;
+    private Date altaContrato;
 
 }
