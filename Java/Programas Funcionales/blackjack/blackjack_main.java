@@ -448,7 +448,7 @@ public class blackjack_main {
                     System.exit(0);
 
                 }
-                if (valorCartaIA < 21 && valorCartaIA > valorCartaPlayer) {
+                if (valorCartaIA <= 21 && valorCartaIA > valorCartaPlayer) {
 
                     JOptionPane.showMessageDialog(null, "La IA ha ganado al sacar mas que tu");
                     System.exit(0);
