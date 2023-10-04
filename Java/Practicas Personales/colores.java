@@ -21,6 +21,18 @@ public class colores {
 
         }
 
+        if (color.equalsIgnoreCase("rojo") && color2.equalsIgnoreCase("amarillo") || color.equalsIgnoreCase("amarillo") && color2.equalsIgnoreCase("rojo")){
+
+            JOptionPane.showMessageDialog(null, "La mezcla de colores es naranja");
+
+        }
+
+       else {
+
+            JOptionPane.showMessageDialog(null, "La mezcla de colores no es naranja");
+
+        }
+
     }
 
 }
