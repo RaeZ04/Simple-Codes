@@ -6,28 +6,29 @@
 
 body{
 
-    background-color: #ddd4d4;
+    background-color: rgba(25,27,31,255)
 
 }
 
 header{
 
-    color: rgb(219, 214, 214);
     height: 7.5vmax;
-    background-color: rgb(173, 39, 39);
+    background-color: rgba(36,39,44,255);
     height: 10vmax;
+    border-bottom: solid;
+    border-color: rgba(0,160,227,255)
 
 }
 
 .titulo{
 
-    color: rgb(0, 0, 0);
+    color: rgba(254,254,254,255);
     text-decoration: none;
     font-size: 5vmax;
     font-family:'Times New Roman', Times, serif;
     position: absolute;
     left: 15vmax;
-    top: 2vmax;
+    top: 1.5vmax;
 
 }
 
@@ -40,29 +41,51 @@ header{
 
 }
 
-.centratabla{
-
-
-
-}
 
 .tabla{
 
-    background-color:rgb(220, 124, 124);
+    background-color: rgba(36,39,44,255);
     position: absolute;
     top: 15vmax;
-    width: 50vmax;
+    width: 55vmax;
     text-align: center;
-    left: 23vmax;
-    height: 10vmax;
+    left: 5vmax;
+    height: 20vmax;
+    border: solid;
+    border-color: rgba(0,160,227,255)
+
+}
+
+.tabla2{
+
+    background-color: rgba(36,39,44,255);
+    position: absolute;
+    top: 15vmax;
+    width: 25vmax;
+    text-align: center;
+    right: 5vmax;
+    height: 30vmax;
+    border: solid;
+    border-color: rgba(0,160,227,255)
 
 }
 
 .letra1{
 
-    background-color: rgb(173, 39, 39);
+    background-color: rgba(36,39,44,255);
+    color: white;
     height: 3vmax;
-    font-size: 2vmax;
-    position: relative;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+
+}
+
+.linea{
+
+    border-top: 1px solid #9d9fa1;
+    margin-left: 0.5vmax;
+    margin-right: 0.5vmax;
+    margin-top: 0vmax;
+
 
 }
