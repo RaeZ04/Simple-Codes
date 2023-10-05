@@ -82,7 +82,7 @@ header{
 
 .linea{
 
-    border-top: 1px solid #9d9fa1;
+    border-top: 0.1vmax solid #9d9fa1;
     margin-left: 0.5vmax;
     margin-right: 0.5vmax;
     margin-top: 0vmax;
