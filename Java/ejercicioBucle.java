@@ -9,18 +9,21 @@ public class ejercicioBucle {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Elige una de las 4 opciones");
-        System.out.println("1. Bucle While");
-        System.out.println("2. Bucle Do-While");
-        System.out.println("3. Bucle For");
-        System.out.println("4. Terminar programa");
-        System.out.print("Elige la opcion: ");
+        boolean seguir = true;
 
-    int eleccion = input.nextInt();
+        while (seguir == true) {
 
-        while (eleccion != 4) {
+            System.out.println("Elige una de las 4 opciones");
+            System.out.println("1. Bucle While");
+            System.out.println("2. Bucle Do-While");
+            System.out.println("3. Bucle For");
+            System.out.println("4. Terminar programa");
+            System.out.println("");
+            System.out.print("Elige la opcion: ");
 
-            eleccion = input.nextInt();
+            int eleccion = input.nextInt();
+
+            System.out.println("----------------------------------------------------------------------");
 
             if (eleccion == 1) {
 
@@ -34,11 +37,15 @@ public class ejercicioBucle {
 
                     if (impares % 2 == 1) {
 
-                        System.out.println(impares);
+                        System.out.print(impares + " | ");
 
                     }
 
                 }
+
+                System.out.println("");
+                System.out.println("----------------------------------------------------------------------");
+
             }
 
             else if (eleccion == 2) {
@@ -53,11 +60,14 @@ public class ejercicioBucle {
 
                     if (impares % 2 == 1) {
 
-                        System.out.println(impares);
+                        System.out.print(impares + " | ");
 
                     }
 
                 } while (z < 30);
+
+                System.out.println("");
+                System.out.println("----------------------------------------------------------------------");
 
             }
 
@@ -69,20 +79,31 @@ public class ejercicioBucle {
 
                     if (impares % 2 == 1) {
 
-                        System.out.println(impares);
+                        System.out.print(impares + " | ");
+                        
 
                     }
 
+                    
+
                 }
+
+                System.out.println("");
+                System.out.println("----------------------------------------------------------------------");
+
             }
 
             else if (eleccion == 4) {
 
                 System.out.println("Se ha terminado el programa");
-                System.exit(0);
+                seguir = false;
 
             }
+
         }
+
+        input.close();
+
     }
 
 }
