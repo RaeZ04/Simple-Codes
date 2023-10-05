@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+import javax.swing.*;
 
 public class ejercicioBucle {
 
@@ -81,10 +82,7 @@ public class ejercicioBucle {
 
                         System.out.print(impares + " | ");
                         
-
                     }
-
-                    
 
                 }
 
@@ -97,6 +95,13 @@ public class ejercicioBucle {
 
                 System.out.println("Se ha terminado el programa");
                 seguir = false;
+
+            }
+
+            else{
+
+                System.out.println("No has elegido la opción correcta, elige del 1-4");
+                System.out.println("----------------------------------------------------------------------");
 
             }
 
