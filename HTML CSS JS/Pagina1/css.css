@@ -47,12 +47,13 @@ header{
     background-color: rgba(36,39,44,255);
     position: absolute;
     top: 15vmax;
-    width: 55vmax;
+    width: 57vmax;
     text-align: center;
     left: 5vmax;
-    height: 20vmax;
+    height: 28vmax;
     border: solid;
-    border-color: rgba(0,160,227,255)
+    border-color: rgba(0,160,227,255);
+    border-radius: 1vmin;
 
 }
 
@@ -64,9 +65,10 @@ header{
     width: 25vmax;
     text-align: center;
     right: 5vmax;
-    height: 30vmax;
+    height: 35vmax;
     border: solid;
-    border-color: rgba(0,160,227,255)
+    border-color: rgba(0,160,227,255);
+    border-radius: 1vmin;
 
 }
 
@@ -80,6 +82,32 @@ header{
 
 }
 
+.letra2{
+
+    color: white;
+    height: 3vmax;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+    text-decoration: none;
+    position: absolute;
+    right: 24vmax;
+    top: 0.5vmax;
+
+}
+
+.letra3{
+
+    color: white;
+    height: 3vmax;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+    text-decoration: none;
+    position: absolute;
+    right: 12vmax;
+    top: 0.5vmax;
+
+}
+
 .linea{
 
     border-top: 0.1vmax solid #9d9fa1;
@@ -87,5 +115,44 @@ header{
     margin-right: 0.5vmax;
     margin-top: 0vmax;
 
+
+}
+
+.poster1{
+
+    position: absolute;
+    left: 4vmax;
+    top: 5.6vmax;
+    height: 20vmax;
+    width: 15vmax;
+
+}
+
+.poster2{
+
+    position: absolute;
+    left: 21vmax;
+    top: 5.6vmax;
+    height: 20vmax;
+    width: 15vmax;
+
+}
+
+.poster3{
+
+    position: absolute;
+    right: 4vmax;
+    top: 5.6vmax;
+    height: 20vmax;
+    width: 15vmax;
+
+}
+
+
+.poster4{
+
+    margin-top: 3vmax;
+    margin-right: 0.2vmax;
+    height: 26vmax;
 
 }

@@ -1,0 +1,228 @@
+*{
+
+    margin: 0;
+    
+}
+
+body{
+
+    background-color: rgba(25,27,31,255)
+
+}
+
+header{
+
+    height: 7.5vmax;
+    background-color: rgba(36,39,44,255);
+    height: 10vmax;
+    border-bottom: solid;
+    border-color: rgba(0,160,227,255)
+
+}
+
+.titulo{
+
+    color: rgba(254,254,254,255);
+    text-decoration: none;
+    font-size: 5vmax;
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    left: 15vmax;
+    top: 1.5vmax;
+
+}
+
+.logo{
+
+    position: absolute;
+    width: 9vmax;
+    height: 9vmax;
+    left: 3vmax;
+
+}
+
+
+.tabla1{
+
+    background-color: rgba(36,39,44,255);
+    position: absolute;
+    top: 15vmax;
+    width: 35vmax;
+    text-align: center;
+    right: 32vmax;
+    height: 25vmax;
+    border: solid;
+    border-color: rgba(0,160,227,255);
+    border-radius: 1vmin;
+
+}
+
+.letra1{
+
+    background-color: rgba(36,39,44,255);
+    color: white;
+    height: 3vmax;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+
+}
+
+.letra4{
+
+    background-color: rgba(36,39,44,255);
+    color: white;
+    height: 3vmax;
+    font-size: 1.3vmax;
+    margin-top: 5vmax;
+    margin-left: 3vmax;
+    position: absolute;
+
+}
+
+.letra5{
+
+    background-color: rgba(36,39,44,255);
+    color: white;
+    height: 3vmax;
+    font-size: 1.3vmax;
+    margin-top: 10vmax;
+    margin-left: 3vmax;
+    position: absolute;
+
+}
+
+.letra6{
+
+    background-color: rgba(36,39,44,255);
+    color: white;
+    font-size: 1vmax;
+    margin-top: 11.85vmax;
+    margin-left: 9.5vmax;
+    position: absolute;
+
+}
+
+.letra7{
+
+
+    color: rgba(0,160,227,255);
+    font-size: 1.2vmax;
+    margin-top: 19.5vmax;
+    margin-left: 2vmax;
+    position: absolute;
+    
+}
+
+.letra8{
+
+
+    color: rgba(0,160,227,255);
+    font-size: 1.2vmax;
+    margin-top: 19.5vmax;
+    margin-left: 2vmax;
+    position: absolute;
+    
+}
+
+.letraextra{
+
+
+    color: white;
+    font-size: 1.2vmax;
+    
+}
+
+.letra2{
+
+    color: white;
+    height: 3vmax;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+    text-decoration: none;
+    position: absolute;
+    right: 24vmax;
+    top: 0.5vmax;
+
+}
+
+.letra3{
+
+    color: white;
+    height: 3vmax;
+    font-size: 1.8vmax;
+    margin-top: 0.5vmax;
+    text-decoration: none;
+    position: absolute;
+    right: 12vmax;
+    top: 0.5vmax;
+
+}
+
+.linea{
+
+    border-top: 0.1vmax solid #9d9fa1;
+    margin-left: 0.5vmax;
+    margin-right: 0.5vmax;
+    margin-top: 0vmax;
+
+
+}
+
+.inputemail{
+
+    background-color: white;
+    border: solid 0.3vmin;
+    border-color: rgba(0,160,227,255);
+    position: absolute;
+    top: 8.4vmax;
+    left: 7.5vmax;
+    width: 23vmax;
+    border-radius: 0.8vmin;
+    height: 1.3vmax;
+
+}
+
+.inputpass{
+
+    background-color: white;
+    border: solid 0.3vmin;
+    border-color: rgba(0,160,227,255);
+    position: absolute;
+    top: 13.3vmax;
+    left: 7.5vmax;
+    width: 23vmax;
+    border-radius: 0.8vmin;
+    height: 1.3vmax;
+
+}
+
+.inputmostrar{
+
+    background-color: white;
+    border: solid 0.3vmin;
+    border-color: rgba(0,160,227,255);
+    position: absolute;
+    top: 15.5vmax;
+    left: 8vmax;
+    border-radius: 0.8vmin;
+    width: 1vmax;
+    height: 1vmax;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+button{
+
+    background-color: rgba(0,160,227,255);
+    border: 0px;
+    height: 3vmax;
+    width: 10vmax;
+    border-radius: 1vmin;
+    position: absolute;
+    bottom: 1vmax;
+    right: 4vmax;
+
+}
