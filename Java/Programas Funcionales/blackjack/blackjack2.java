@@ -17,6 +17,8 @@ public class blackjack2 {
 
             int CartaRandom = random.nextInt(cartas.length);
 
+            
+
         }
 
     }
