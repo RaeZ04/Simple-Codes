@@ -1,0 +1,106 @@
+----- INICIO MAIN -----
+
+Insancia PersonaX
+Insancia PersonaX
+...
+...
+...
+
+Instancia BebidaX
+Instancia BebidaX
+...
+...
+...
+
+
+sout (personaX.nombre se ha llevaod a caja bebidaX + bebidaX + bebidaX + bebidaX)
+
+if (personaX.edad > 18 ){
+
+    if (bebidaX.alcohol == true){
+
+        sout (No se ha podido llevar bebidaX porque es menor de edad)
+
+    }
+
+    if (bebidaX.alcohol == true){
+
+        sout (No se ha podido llevar bebidaX porque es menor de edad)
+
+    }
+
+    IF RESTANTES PARA CADA BEBIDA
+    ...
+    ...
+    ...
+
+    sout (Se ha podido llevar a casa: | )
+
+    if (bebidaX.alcohol == false){
+
+        sout (bebidaX.nombre + | )
+
+    }
+
+    if (bebidaX.alcohol == false){
+
+        sout (bebidaX.nombre + | )
+
+    }
+
+    IF RESTANTES
+    ...
+    ...
+
+
+}
+
+----- FIN MAIN -----
+
+----- INICIO PERSONAS ----- 
+
+public static class personaX{
+
+        private String nombre = "X";
+        private int edad = X;
+        private boolean carrito = true/false;
+
+    } 
+
+public static class personaX{
+
+        private String nombre = "X";
+        private int edad = X;
+        private boolean carrito = true/false;
+
+    } 
+
+ASI POR 10 PERSONAS
+...
+...
+
+----- FIN PERSONAS ----- 
+
+----- INICIO BEBIDAS ----- 
+
+public static class bebidaX{
+
+        private String nombre = "X";
+        private String marca = "X";
+        private boolean alcohol = true/false;
+
+    }
+
+public static class bebidaX{
+
+        private String nombre = "X";
+        private String marca = "X";
+        private boolean alcohol = true/false;
+
+    }
+
+ASI POR 10 BEBIDAS
+...
+...
+
+----- FIN BEBIDAS ----- 
