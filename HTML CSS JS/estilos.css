@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body{
+
+    font-family: sans-serif;
+    background-color: rgba(25,27,31,255);
+    color: white;
+    
+}
+
+.titulo{
+
+    text-align: center;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 60px;
+
+
+}
+.subtitulo{
+
+    position: absolute;
+    width: 98.5vmax;
+    top: 15vmax;
+    background-color: rgb(86, 86, 165);
+    text-align: center;
+
+}
+.tabla{
+
+    text-align: center;
+    top: 11.5vmax;
+    position: absolute;
+    left: 45vmax;
+    border-style: solid;
+    width: 10vmax;
+    height: 3vmax;
+    border-color: rgb(73, 86, 189);
+    border-radius: 1vmax;
+    border-width: 0.3vmin;
+
+}
+.texto{
+
+    position: absolute;
+    top: 15vmax;
+    margin:5vmax;
+    border: solid;
+    border-color: rgb(73, 86, 189);
+    border-width: 0.4vmin;
+    border-radius: 1vmax;
+    background-color: rgb(138, 155, 211);
+
+    
+}
+
+.texto:hover{
+
+    background-color: rgb(247, 8, 8);
+
+}
+
+.tabla:hover{
+
+    width: 40vmax;
+    left: 30vmax;
+
+}
+
+.waviy h1 {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
