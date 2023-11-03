@@ -85,3 +85,30 @@ body{
       transform: translateY(-20px)
     }
   }
+
+  .letraextra{
+
+
+    color: rgb(0, 0, 0);
+    font-size: 1.2vmax;
+    
+    
+}
+
+.posicionreloj{
+
+    position: absolute;
+    left: 6vmax;
+    top: 4vmax;
+
+}
+
+.formareloj{
+
+    border-radius: 1vmin;
+    text-align: center;
+    height: 3vmax;
+    font-size: 2vmax;
+    background-color: rgb(152, 236, 236);
+
+}
