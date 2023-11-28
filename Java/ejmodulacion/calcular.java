@@ -6,7 +6,6 @@ public class calcular {
         System.out.println("El area es " + area);
         double perimetro = peticion.getBase() * 2 + peticion.getAltura() * 2;
         System.out.println("El perimetro es " + perimetro);
-        System.out.println("Hola que tal");
 
     }
     
